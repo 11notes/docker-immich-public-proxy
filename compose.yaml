@@ -1,0 +1,14 @@
+name: "immich-public-proxy"
+services:
+  immich-public-proxy:
+    image: "11notes/immich-public-proxy:latest"
+    container_name: "immich-public-proxy"
+    environment:
+      TZ: "Europe/Zurich"
+    ports:
+      - "3000:3000/tcp"
+    volumes:
+      - "var:/node"
+    restart: "always"
+volumes:
+  var:
