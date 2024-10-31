@@ -7,8 +7,4 @@ services:
       TZ: "Europe/Zurich"
     ports:
       - "3000:3000/tcp"
-    volumes:
-      - "var:/node"
     restart: "always"
-volumes:
-  var:

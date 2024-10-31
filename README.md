@@ -8,9 +8,6 @@
 # SYNOPSIS
 **What can I do with this?** This image will publicly expose your shared albums without the need to expose the /api endpoint.
 
-# VOLUMES
-* **/node** - Directory of the app and your configuration
-
 # COMPOSE
 ```yaml
 name: "immich-public-proxy"
@@ -22,11 +19,7 @@ services:
       TZ: "Europe/Zurich"
     ports:
       - "3000:3000/tcp"
-    volumes:
-      - "var:/node"
     restart: "always"
-volumes:
-  var:
 ```
 
 # DEFAULT SETTINGS
