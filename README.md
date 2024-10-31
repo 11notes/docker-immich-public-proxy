@@ -42,6 +42,8 @@ volumes:
 | --- | --- | --- |
 | `TZ` | [Time Zone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) | |
 | `DEBUG` | Show debug information | |
+| `IMMICH_PUBLIC_PROXY_LOCAL_URL` | Immich internal URL | http://immich.server:2283 |
+| `IMMICH_PUBLIC_PROXY_PUBLIC_URL` | Immich internal URL | https://immich.domain.com |
 
 # SOURCE
 * [11notes/immich-public-proxy:latest](https://github.com/11notes/docker-immich-public-proxy/tree/latest)

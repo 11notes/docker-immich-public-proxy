@@ -30,9 +30,8 @@
   ENV APP_NAME="immich-public-proxy"
   ENV APP_VERSION="latest"
   ENV NODE_ENV="production"
-  ENV IMMICH_URL="http://localhost:3000"
-  ENV PORT=3000
-  ENV CACHE_AGE=2592000
+  ENV IMMICH_PUBLIC_PROXY_LOCAL_URL="http://immich.server:2283"
+  ENV IMMICH_PUBLIC_PROXY_PUBLIC_URL="https://immich.domain.com"
 
 # :: Run
   USER root
